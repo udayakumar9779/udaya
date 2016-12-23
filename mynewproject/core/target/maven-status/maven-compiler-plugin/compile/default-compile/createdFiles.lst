@@ -1,0 +1,6 @@
+com/mynewproject/mynewproject/core/package-info.class
+com/mynewproject/mynewproject/core/listeners/SimpleResourceListener.class
+com/mynewproject/mynewproject/core/servlets/SimpleServlet.class
+com/mynewproject/mynewproject/core/models/HelloWorldModel.class
+com/mynewproject/mynewproject/core/filters/LoggingFilter.class
+com/mynewproject/mynewproject/core/schedulers/SimpleScheduledTask.class

@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Bundle-Description: Core bundle for my project
+Bundle-SymbolicName: group-id.mynewproject.core
+Built-By: udaya
+Bnd-LastModified: 1482420020560
+Bundle-ManifestVersion: 2
+Import-Package: javax.annotation,javax.inject;version="[0.0,1)",javax.
+ servlet,org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.r
+ equest;version="[2.4,3)",org.apache.sling.api.resource;version="[2.5,
+ 3)",org.apache.sling.api.servlets;version="[2.1,3)",org.apache.sling.
+ commons.osgi;version="[2.2,3)",org.apache.sling.models.annotations;ve
+ rsion="[1.0,2)",org.apache.sling.settings;version="[1.3,2)",org.osgi.
+ service.event;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/*.xml
+Tool: Bnd-2.3.0.201405100607
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.
+ servlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;
+ objectClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?
+ ";scheduler.concurrent=false;service.vendor=Adobe,osgi.service;effect
+ ive:=active;objectClass="javax.servlet.Filter";service.ranking=-700;s
+ ling.filter.scope=REQUEST;service.vendor=Adobe,osgi.service;effective
+ :=active;objectClass="org.osgi.service.event.EventHandler";event.topi
+ cs="org/apache/sling/api/resource/Resource/*";service.vendor=Adobe
+Export-Package: com.mynewproject.mynewproject.core.filters;uses:="java
+ x.servlet";version="1.0.0",com.mynewproject.mynewproject.core.listene
+ rs;uses:="org.osgi.service.event";version="1.0.0",com.mynewproject.my
+ newproject.core.models;uses:="javax.annotation,javax.inject,org.apach
+ e.sling.api.resource,org.apache.sling.models.annotations";version="1.
+ 0.0",com.mynewproject.mynewproject.core;version="1.0",com.mynewprojec
+ t.mynewproject.core.schedulers;version="1.0.0",com.mynewproject.mynew
+ project.core.servlets;uses:="javax.servlet,org.apache.sling.api,org.a
+ pache.sling.api.servlets";version="1.0.0"
+Bundle-Name: my project - Core
+Bundle-Version: 1.0.0.SNAPSHOT
+Build-Jdk: 1.8.0_60
+Created-By: Apache Maven Bundle Plugin
+Sling-Model-Packages: com.mynewproject.mynewproject.core
+

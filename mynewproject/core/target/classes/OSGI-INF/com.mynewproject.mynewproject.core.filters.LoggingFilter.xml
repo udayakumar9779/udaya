@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="com.mynewproject.mynewproject.core.filters.LoggingFilter">
+        <implementation class="com.mynewproject.mynewproject.core.filters.LoggingFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="service.ranking" type="Integer" value="-700"/>
+        <property name="sling.filter.scope" value="REQUEST"/>
+        <property name="service.pid" value="com.mynewproject.mynewproject.core.filters.LoggingFilter"/>
+    </scr:component>
+</components>
